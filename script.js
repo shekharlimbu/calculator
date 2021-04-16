@@ -20,11 +20,12 @@ function subtract(){
 }
 
 function multiply(){
-    //writing some random code to cause conflict
-    var a=5;
-    var b=2;
-    var c=a+b;
-    console.log(c);
+    a=Number(document.getElementById("numA").value);
+    b=Number(document.getElementById("numB").value);
+    var c = a * b;
+    document.getElementById("operator").innerHTML = "*";
+    document.getElementById("result").innerHTML = c;
+    document.getElementById("msg").innerHTML = '';
 }
 
 function divide(){
